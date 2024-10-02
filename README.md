@@ -37,7 +37,7 @@ content: [
 ```
 
 7. Creating our dist and src folders and create a tailwind.css in the src folder
-
+```
 ├── README.md
 ├── main.py
 ├── node_modules
@@ -50,6 +50,7 @@ content: [
 ├── tailwind.config.js
 ├── templates
 └── venv
+```
 
 ```
 @tailwind base;
