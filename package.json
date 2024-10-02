@@ -1,0 +1,19 @@
+{
+  "name": "learn-webgl",
+  "version": "1.0.0",
+  "description": "Explorations and touching on webgl, on top of a flask webapp with tailwind css.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss build -i ./static/css/src/input.css -o ./static/css/dist/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  }
+}

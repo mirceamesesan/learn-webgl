@@ -1,0 +1,23 @@
+{% include 'layout/base.html' %}
+
+{% block content %}
+
+    <canvas id="bg"></canvas>
+
+    <section class="hero">
+        <!-- First part -->
+        <div class="container h-screen flex flex-col justify-between p-8">
+            <h1 class="text-5xl text-white">Welcome to the 3D world</h1>
+            <p class="text-gray-400">Here is a 3D model of a cube</p>
+            <a href="" class="bg-white hover:bg-gray-400 px-10 p-4 rounded-full w-fit">View Cube</a>
+        </div>
+        <!-- Second part -->
+         <div class="container h-screen flex flex-col justify-between p-8">
+            <h1 class="text-5xl text-white flex items-center">
+                This is the second part with much more text, that will help us animate the torus in the canvas with threeJS. Trying to write a few more lines just for content purpose.
+            </h1>
+            <p class="text-gray-400">This is just a disclaimer text. Moving forward to another section from here.</p>
+         </div>
+    </section>
+
+{% endblock %}
