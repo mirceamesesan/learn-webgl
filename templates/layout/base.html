@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experimenting with web-gl</title>
-    <!-- Importing the tailwind dist stles -->
+
+    <!-- Importing the tailwind dist styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dist/styles.css') }}">
 </head>
 <body class="">
     {% block content %}
     
     {% endblock %}
-    
-    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Importing the Three.JS module -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+          }
+        }
+      </script>
+      <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
